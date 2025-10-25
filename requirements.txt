@@ -1,11 +1,11 @@
 # Core dependencies for loading and investigating Gemma-2-9B with nnsight
 # Install with: pip install -r requirements.txt
-
+torch>=2.4.0
 # Main framework
 nnsight>=0.5.9
 
 # PyTorch (adjust for your CUDA version if needed)
-torch>=2.4.0
+
 
 # Transformers and model loading
 transformers>=4.57.0
@@ -17,7 +17,6 @@ safetensors>=0.4.3
 tokenizers>=0.22.0,<=0.23.0
 
 # Performance optimization
-flash-attn>=2.0.0
 bitsandbytes>=0.48.0  # For quantization (4-bit, 8-bit)
 
 # Utilities
