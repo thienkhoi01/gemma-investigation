@@ -1,0 +1,51 @@
+[project]
+name = "gemma-investigation"
+version = "0.1.0"
+description = "Investigation of Gemma-2-9B model using nnsight"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    # Core framework
+    "nnsight>=0.5.9",
+    
+    # PyTorch
+    "torch>=2.4.0",
+    
+    # Transformers and model loading
+    "transformers>=4.57.0",
+    "accelerate>=1.11.0",
+    "huggingface-hub>=0.21.0",
+    "safetensors>=0.4.3",
+    
+    # Tokenization
+    "tokenizers>=0.22.0,<0.24.0",
+    
+    # Performance optimization
+    "bitsandbytes>=0.48.0",
+    
+    # Utilities
+    "numpy>=1.17",
+    "pydantic>=2.9.0",
+    "python-socketio[client]>=5.14.0",
+    
+    # Interactive work (Jupyter)
+    "ipython>=9.0.0",
+    "jupyter>=1.0.0",
+    "notebook>=7.0.0",
+    
+    # Visualization and analysis
+    "matplotlib>=3.5.0",
+    "pandas>=2.0.0",
+    "tqdm>=4.27.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = []
+
+[dependency-groups]
+dev = []
+
